@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div><h1>To-Do App</h1></div>
+        <div><h2>Welcome</h2></div>
+    </nav>
+    <div class="container">
+        
+        <form>
+            <h2>You Can Add Your Tasks here</h2>
+            <input type="text" id="task-input" placeholder="Write down your task">
+            <input type="text" id="description-input" placeholder="Add task description">
+        </form>
+        <button id="newtask" type="submit">Add Task</button>
+        <div class="filter-container">
+            <button class="filter-btn" id="all-tasks">All</button>
+            <button class="filter-btn" id="completed-tasks">Completed</button>
+            <button class="filter-btn" id="incomplete-tasks">Incomplete</button>
+        </div>
+        <ul id="task-list"></ul>
+        <div class="stats-container">
+            <div class="details">
+                <h1>Your Task Progress</h1>
+                <p>Keep it up</p>
+                <div id="progrsbar">
+                    <div id="progrsss"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>&copy By To-Do App</h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

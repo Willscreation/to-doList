@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: #213555;
+    --secondaryBackground: #3E5879;
+    --text : #fff;
+    --purple : #D8C4B6;
+    --teal : #24feee;
+}
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+nav{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family:monospace;
+}
+nav h1{
+    padding-left:20px ;
+    padding-top: 2px;
+}
+nav h2{
+    padding-right:20px ;
+    padding-top: 2px;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+}
+.filter-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+#all-tasks,#completed-tasks,#incomplete-tasks{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--secondaryBackground);
+    color: var(--text);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#all-tasks:hover{
+    width: 160px;
+    height: 31px;
+    background-color: var(--purple);
+
+}
+#completed-tasks:hover{
+    width: 160px;
+    height: 31px;
+    background-color: var(--purple);
+
+}
+#incomplete-tasks:hover {
+    width: 160px;
+    height: 31px;
+    background-color: var(--purple);
+}
+.stats-container{
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+.details{
+    width: 100%;
+}
+#progrsss{
+    width: 0%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3 ease;
+}
+#progrsbar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+form {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#task-input, #description-input {
+    flex: 1;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+#task-input {
+    flex-basis: 60%;
+}
+#description-input {
+    flex-basis: 40%;
+}
+.taskDescription {
+    margin-left: 30px;
+    color: var(--teal);
+    font-size: 14px;
+}
+
+#newtask {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--teal);
+    color: var(--background);
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+}
+input{
+    flex: 1;
+    padding: 16px;
+    background : var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+.taskItem{
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.task input{
+    height: 20px;
+    width: 20px;
+}
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.completed p{
+    text-decoration: line-through;
+    color: var(--teal);
+
+}
+footer{
+    text-align: center;
+}
+
+form h2{
+    text-align: center;
+}
+.details h1{
+    font-family:monospace;
+}
+
+
